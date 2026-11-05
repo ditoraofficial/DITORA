@@ -1,18 +1,18 @@
 # DITora — Your Complete DIT Learning Platform
 
-A responsive Flask learning platform starter with course catalog, lessons, student accounts, progress tracking, and practice quiz.
+Flask learning platform with course catalog, lessons, student accounts, progress tracking, and practice quiz.
 
-## Run locally
+## Vercel deployment
+- `app.py` is the Flask entry point.
+- HTML files are in `templates/`.
+- CSS is in `static/`.
+- Set `DATABASE_URL` to the Supabase PostgreSQL Session Pooler connection string.
+- Set `SECRET_KEY` to a long random secret in Vercel Environment Variables.
+- Redeploy after changing environment variables.
+
+## Local run
 1. Install Python 3.11+.
-2. Open terminal in this folder.
-3. Run `python -m pip install -r requirements.txt`
+2. Run `python -m pip install -r requirements.txt`
+3. Set `DATABASE_URL` and `SECRET_KEY` environment variables.
 4. Run `python app.py`
 5. Visit `http://127.0.0.1:5000`
-
-## Hosting
-This project is prepared for deployment to a Python web host. ChatGPT cannot itself provide an always-on public server. Before public production use, configure a strong `SECRET_KEY`, persistent database storage, HTTPS, backups, and appropriate privacy/security policies.
-
-## Customizing
-- Course data and lessons: edit `COURSES` and `LESSONS` in `app.py`.
-- Page templates: `templates/`
-- Styles: `static/style.css`
